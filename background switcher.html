@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKGROUND SWITCHER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="color">
+        <span class="btn" id="black" onclick="changebg('#000000')"></span>
+        <span class="btn" id="orange" onclick="changebg('#FF4500')"></span>
+        <span class="btn" id="yellow" onclick="changebg('#FFFFE0')"></span>
+        <span class="btn" id="violet" onclick="changebg('#ce9aff')"></span>
+    </div>
+    <h1 class="text">About-us</h1>
+    <img src="family.jpg" alt="">
+    <p class="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic pariatur, cupiditate nisi tempore distinctio inventore possimus, consequuntur mollitia labore, voluptates illum quia iste a assumenda molestiae debitis. Voluptatum tempora omnis animi quis tempore eveniet nesciunt ipsum eaque inventore quidem dolores autem hic, deserunt eius quod pariatur enim suscipit, ullam voluptate? Voluptas aliquid maiores, est ad reiciendis fugiat veritatis delectus placeat laudantium exercitationem voluptates velit ducimus dolorem obcaecati inventore tempore fugit debitis quae facilis. Dolore ipsum, magnam accusantium officiis ducimus enim sapiente? Iure, porro repudiandae id dolore autem dolorum neque et veniam velit distinctio corrupti tenetur nisi eaque nulla repellat. Officiis obcaecati blanditiis excepturi dolor corporis velit voluptas, similique iusto dicta laudantium alias! Corporis, dolor temporibus? Repellat dicta cumque, reprehenderit, accusamus, odit labore odio voluptatibus deserunt est quibusdam ipsam. Saepe tempora quae officiis possimus numquam nihil maxime expedita, enim ipsa, adipisci praesentium quas facere iure non! Laboriosam iusto odio magnam ipsa!
+    </p>
+
+    <script>
+        function changebg(color){
+            document.body.style.backgroundColor = color;
+            
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                };
+            }
+            else{
+                for(let elm of txt){
+                    elm.style.color = "black";
+                }
+            }
+        };
+    </script>
+</body>
+</html>

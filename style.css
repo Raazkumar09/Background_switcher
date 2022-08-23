@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    padding: 30px 100px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+img{
+    width: 60%;
+    height: auto;
+    margin: 10px 250px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: justify;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 2px solid silver;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+#black{
+    background-color: black;
+}
+#orange{
+    background-color: orange;
+}
+#yellow{
+    background-color: yellow;
+}
+#violet{
+    background-color: violet;
+}
+
+#color{
+    text-align: right;
+    padding: 0px 40px;
+}
+
+#color span{
+    margin: 0px 10px;
+}
